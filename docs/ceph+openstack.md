@@ -47,6 +47,7 @@ Chuyển key glance sang node glance
 ```sh
 ceph auth get-or-create client.glance | ssh 10.10.10.206 sudo tee /etc/ceph/ceph.client.glance.keyring
 ssh 10.10.10.206 sudo chown glance:glance /etc/ceph/ceph.client.glance.keyring
+```
 
 Thêm cấu hình /etc/glance/glance-api.conf trên node ctl
 ```sh
